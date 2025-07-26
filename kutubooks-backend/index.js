@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'kutupass', // or your MySQL password
+  password: 'kutupass', 
   database: 'kutubooks'
 });
 
@@ -221,7 +221,7 @@ app.get('/stories/:id/likes', (req, res) => {
   });
 });
 
-// 4. (Optional) Check if user liked a story (GET /likes/check?user_id=...&story_id=...)
+// Check if user liked a story 
 app.get('/likes/check', (req, res) => {
   const { user_id, story_id } = req.query;
   const sql = 'SELECT * FROM likes WHERE user_id = ? AND story_id = ?';
