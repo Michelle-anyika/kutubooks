@@ -1,4 +1,4 @@
-// app.js — Common JavaScript used in index.html and other shared logic
+// app.js — Common JavaScript used in index.html and other logic
 
 // Function to check if user is logged in
 function isLoggedIn() {
