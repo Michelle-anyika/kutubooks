@@ -187,7 +187,7 @@
     const password = document.getElementById('password').value.trim();
 
     try {
-      // Call your backend register endpoint
+      // Calling my backend register endpoint
       const res = await fetch('http://localhost:3000/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
